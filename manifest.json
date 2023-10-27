@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Indian Headline Rhymes",
+    "version": "1.0",
+    "description": "Transforms headlines into mini rhymes on an Indian newspaper website.",
+    "permissions": ["activeTab", "storage"],
+    "icons": {
+      "48": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.thehindu.com/"],
+        "js": ["content.js"]
+      }
+    ]
+    
+  }
+  
